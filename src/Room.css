@@ -1,0 +1,12 @@
+.main{
+    height: 100vh;
+    
+}
+.on{
+    background-color: white;
+    color: black;
+}
+.off{
+    background-color: black;
+    color: white;
+}
