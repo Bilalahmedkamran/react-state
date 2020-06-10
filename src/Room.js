@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import "./Room.css"
 
 
 function Room(){
@@ -8,7 +9,7 @@ function Room(){
 
 
     return(
-        <div>
+        <div className={`main  ${light? "on" : "off"}`}>
             <br/>
             The light is {light ?"ON" : "OFF" }
             <br/>
