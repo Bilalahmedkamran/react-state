@@ -9,14 +9,19 @@ function Room(){
 
     return(
         <div>
+            <br/>
             The light is {light ?"ON" : "OFF" }
+            <br/>
+            <br/>
             Current temperature = {temp + " degrees celcius"}
         <br/>
-        <button onClick={()=> setlight(!light) }>ON</button> <button onClick={()=> setlight(light)}>OFF</button>
+        <br/>
+        Turn the Light on and off from here: <br/> 
+        <button onClick={()=> setlight(light=true) }>ON</button> <button onClick={()=> setlight(light=false)}>OFF</button>
         <br/>
         <br/>
-           Set the temperature here
-        <button onClick={()=> setTemp(temp++)}>+</button>  <button onClick={()=> setTemp(temp--)}>-</button>
+           Set the temperature from here: <br/>
+        <button onClick={()=> setTemp(temp=temp+1)}>+</button>  <button onClick={()=> setTemp(temp=temp-1)}>-</button>
         
         
         </div>
